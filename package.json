@@ -1,0 +1,16 @@
+{
+  "name": "inventory-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "npm --prefix ./inventory run start",
+    "api": "npm --prefix ./api/ run server",
+    "electron": "npm --prefix ./inventory run electron",
+    "web": "concurrently \"npm run frontend\" \"npm run api\"",
+    "app": "concurrently \"npm run frontend\" \"npm run api\" \"npm run electron\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
